@@ -21,10 +21,12 @@ class X2Test {
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
     }
+
     @Test
     void whenAminus1B1C1X1Then1() {
         /* Входные параметра. Их будет 4 для данного случая*/
         int a = -1;
+
         int b = 1;
         int c = 1;
         int x = 1;
@@ -36,6 +38,7 @@ class X2Test {
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
     }
+
     @Test
     void whenAminus0B1C1X1Then2() {
         /* Входные параметра. Их будет 4 для данного случая*/
@@ -51,6 +54,7 @@ class X2Test {
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
     }
+
     @Test
     void whenAminus1B1C0X1Then0() {
         /* Входные параметра. Их будет 4 для данного случая*/
@@ -66,6 +70,7 @@ class X2Test {
         /* сравнение полученного значения с ожидаемым */
         assertThat(rsl).isEqualTo(expected);
     }
+
     @Test
     void whenAminus1B1C1X0Then1() {
         /* Входные параметра. Их будет 4 для данного случая*/
