@@ -26,7 +26,6 @@ class X2Test {
     void whenAminus1B1C1X1Then1() {
         /* Входные параметра. Их будет 4 для данного случая*/
         int a = -1;
-
         int b = 1;
         int c = 1;
         int x = 1;
@@ -58,9 +57,9 @@ class X2Test {
     @Test
     void whenAminus1B1C0X1Then0() {
         /* Входные параметра. Их будет 4 для данного случая*/
-        int a = -0;
+        int a = -1;
         int b = 1;
-        int c = 1;
+        int c = 0;
         int x = 1;
         /* ожидаемое значение. Это всегда одна переменная. */
         int expected = 0;
@@ -74,10 +73,10 @@ class X2Test {
     @Test
     void whenAminus1B1C1X0Then1() {
         /* Входные параметра. Их будет 4 для данного случая*/
-        int a = -0;
+        int a = -1;
         int b = 1;
         int c = 1;
-        int x = 1;
+        int x = 0;
         /* ожидаемое значение. Это всегда одна переменная. */
         int expected = 1;
         /* вызов метода, который хотим проверить. */
