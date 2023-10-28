@@ -12,7 +12,9 @@ public class Converter {
     }
 
     public static void main(String[] args) {
+/*
 
+ */
         float in1 = 140;
         float expected1 = 2;
         float out1 = Converter.rubleToEuro(in1);
