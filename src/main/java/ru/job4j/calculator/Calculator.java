@@ -1,6 +1,5 @@
 package ru.job4j.calculator;
 
-@SuppressWarnings("checkstyle:EmptyLineSeparator")
 public class Calculator {
     public static void plus(int first, int second) {
         int result = first + second;
