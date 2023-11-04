@@ -24,7 +24,4 @@ class ConverterTest {
         assertThat(out).isEqualTo(expected, withPrecision(eps));
     }
 
-    @Test
-    void whenConvert200RblThen3dot3333Euro() {
-    }
 }
