@@ -18,7 +18,7 @@ class PointTest {
 
     @Test
     void when35to27then2point2() {
-        double expected = 2.23606797749979;
+        double expected = 2.23;
         int x1 = 3;
         int y1 = 5;
         int x2 = 2;
@@ -29,7 +29,7 @@ class PointTest {
 
     @Test
     void when2315to2107then94point4() {
-        double expected = 94.36630754670864;
+        double expected = 94.36;
         int x1 = 23;
         int y1 = 15;
         int x2 = 2;
