@@ -10,12 +10,11 @@ public class ArrayDefinition {
         names[1] = "Ioann";
         names[2] = "Nikolai";
         names[3] = "Zinaida";
+        for (int i = 0; i < names.length; i++) {
+            System.out.println(names[i]);
+        }
         System.out.println("Размер массива равен: " + ages.length);
         System.out.println("Размер массива равен: " + surnames.length);
         System.out.println("Размер массива равен: " + prices.length);
-        System.out.println(names[0]);
-        System.out.println(names[1]);
-        System.out.println(names[2]);
-        System.out.println(names[3]);
     }
 }
