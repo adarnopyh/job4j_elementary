@@ -28,4 +28,5 @@ class TurnTest {
         int[] expected = new int[]{8, 7, 6, 5, 4, 3, 2, 1};
         assertThat(result).containsExactly(expected);
     }
+
 }
