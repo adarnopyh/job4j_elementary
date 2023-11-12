@@ -28,4 +28,5 @@ public class MinTest {
         int expected = 2;
         assertThat(result).isEqualTo(expected);
     }
+
 }
