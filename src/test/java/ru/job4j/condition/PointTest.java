@@ -7,34 +7,28 @@ import static org.assertj.core.api.Assertions.*;
 class PointTest {
     @Test
     void when00to20then2() {
+        Point a = new Point(0, 0);
+        Point b = new Point(2, 0);
         double expected = 2;
-        int x1 = 0;
-        int y1 = 0;
-        int x2 = 2;
-        int y2 = 0;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void when35to27then2point2() {
+        Point a = new Point(3, 5);
+        Point b = new Point(2, 7);
         double expected = 2.23;
-        int x1 = 3;
-        int y1 = 5;
-        int x2 = 2;
-        int y2 = 7;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
     @Test
     void when2315to2107then94point4() {
+        Point a = new Point(23, 15);
+        Point b = new Point(2, 107);
         double expected = 94.36;
-        int x1 = 23;
-        int y1 = 15;
-        int x2 = 2;
-        int y2 = 107;
-        double out = Point.distance(x1, y1, x2, y2);
+        double out = a.distance(b);
         assertThat(out).isEqualTo(expected, withPrecision(0.01));
     }
 
