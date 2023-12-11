@@ -2,6 +2,7 @@ package ru.job4j;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Hello world");
+        boolean check = 2 > 0 && 3 < 5 && !false;
+        System.out.println(check);
     }
 }
