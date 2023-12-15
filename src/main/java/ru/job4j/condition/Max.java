@@ -1,14 +1,6 @@
 package ru.job4j.condition;
 
 public class Max {
-    public Max(int one, int two) {
-    }
-
-    public Max(int one, int two, int three) {
-    }
-
-    public Max(int one, int two, int three, int four) {
-    }
 
     public int max(int one, int two) {
         return one > two ? one : two;
@@ -27,6 +19,6 @@ public class Max {
                 max(
                     three,
                     max(one, two)
-        ));
+                ));
     }
 }
