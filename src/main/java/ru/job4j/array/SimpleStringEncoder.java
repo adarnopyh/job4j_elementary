@@ -6,16 +6,17 @@ public class SimpleStringEncoder {
         char symbol = input.charAt(0);
         int counter = 1;
         for (int i = 1; i < input.length(); i++) {
-            if (symbol == input.charAt(i)) {
-                counter++;
-            } else if (symbol != input.charAt(i) && counter < 2) {
-                result = (result + input.charAt(i - 1));
-                counter = 1;
-                symbol = input.charAt(i);
+            if (symbol != input.charAt(i)) {
+                if (counter == 1) {
+                    result = (result + input.charAt(i - 1));
+                    symbol = input.charAt(i);
+                } else {
+                    result = (result + input.charAt(i - 1) + counter);
+                    symbol = input.charAt(i);
+                    counter = 1;
+                }
             } else {
-                result = (result + input.charAt(i - 1)) + counter;
-                counter = 1;
-                symbol = input.charAt(i);
+                counter++;
             }
         }
         if (counter < 2) {
